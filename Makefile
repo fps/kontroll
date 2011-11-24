@@ -1,12 +1,12 @@
-COMPILE_FLAGS = -Wall `pkg-config alsa libglade-2.0 gtk+ liblo --cflags`
+COMPILE_FLAGS = -Wall `pkg-config alsa libglade-2.0 gtk+-2.0 liblo --cflags`
 #COMPILE_FLAGS += -g -O2 
 COMPILE_FLAGS += -O3
 
 
-LINK_FLAGS    = `pkg-config alsa libglade-2.0 gtk+ liblo --libs ` -export-dynamic
+LINK_FLAGS    = `pkg-config alsa libglade-2.0 gtk+-2.0 liblo --libs ` -export-dynamic
 
 #if you do not have LASH support, comment out the next two line
-COMPILE_FLAGS += -DHAVE_LASH `pkg-config --cflags lash-1.0` 
+COMPILE_FLAGS +=  `pkg-config --cflags lash-1.0` 
 LINK_FLAGS += `pkg-config --libs lash-1.0` 
 
 
