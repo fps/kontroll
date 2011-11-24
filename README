@@ -17,6 +17,8 @@ You need the respective development packages for building kontroll. LASH is opti
 If you don't have LASH installed please comment out the two lines in the Makefile 
 (there will be a comment to tell you exactly what to comment out).
 
+NOTE: The program has to be installed to work (otherwise the glade file is not found)
+
 Website:
 
 http://tapas.affenbande.org/?page_id=42
