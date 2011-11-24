@@ -1,0 +1,27 @@
+Kontroll is a small utility that generates midi cc messages from the mouse position. 
+It is inspired by the MouseX and MouseY UGens in Supercollider. It simply creates 
+an alsa sequencer port which you can then connect with your favourite patchbay. The 
+mouse position is independent of window focus and is relative to the screen origin 
+at the upper left.
+
+Requirements
+- Linux http://www.kernel.org
+- Gnu toolchain http://www.gnu.org
+- ALSA http://www.alsa-project.org
+- GTK+ http://www.gtk.org
+- Glade http://glade.gnome.org
+- LASH http://lash.nongnu.org
+- liblo http://liblo.sourceforge.net/
+
+You need the respective development packages for building kontroll. LASH is optional. 
+If you don't have LASH installed please comment out the two lines in the Makefile 
+(there will be a comment to tell you exactly what to comment out).
+
+Website:
+
+http://tapas.affenbande.org/?page_id=42
+
+Author:
+
+Florian Paul Schmidt (mista.tapas@gmx.net)
+
